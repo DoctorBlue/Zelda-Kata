@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeldaKata", "ZeldaKata.csproj", "{79F12E24-29EB-481A-AD49-78BBF353CBCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F12E24-29EB-481A-AD49-78BBF353CBCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F12E24-29EB-481A-AD49-78BBF353CBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F12E24-29EB-481A-AD49-78BBF353CBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F12E24-29EB-481A-AD49-78BBF353CBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

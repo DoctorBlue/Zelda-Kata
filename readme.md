@@ -1,7 +1,7 @@
 ﻿# The Legend of Zelda Combat Kata
 Blah blah description here.
 
-A detailed description of the Zelda combat / counter engine is availble in [engine-detail.md](./engine-detail.md). It's not necessary to know every aspect of the engine to complete the Kata, but may provide insight or sate curiosity.
+A detailed description of the Zelda combat / counter engine is available in [engine-detail.md](./engine-detail.md). It's not necessary to know every aspect of the engine to complete the Kata, but may provide insight or sate curiosity.
 
 # TODO
 

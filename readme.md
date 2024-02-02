@@ -1,12 +1,26 @@
-﻿### Steps
+﻿# The Legend of Zelda Combat Kata
+Blah blah description here.
 
+# TODO
+
+1. Separate existing implementations into subfolders (copy any changed files to it as their own solutions)
+2. Create "Starting Point" template (the root project? Own folder?)
+3. Separate first four steps of Kata from the rest (Step 5 onwards is 'advanced')
+4. Description of the Kata at the top of this file
+
+## Let's Begin!
+Use the solution within the `Start` folder to get started. (TODO: Describe the files provided and the files that should be edited.)
+
+### The Kata
 1. Always Return Nothing
 2. Consecutive Streak Bonus - Kill 10 enemies in a row to get a Five Rupee on the 10th Kill
    - Streak is broken if `CombatAction.GetHit` occurs or when the bonus is reached
 3. 10th Enemy has the Bomb - If the 10th enemy is killed with a bomb, a Bomb is returned instead
 4. Fairy Streak Bonus - Kill 16 enemies in a row to get a Fairy on the 16th Kill
    - Fairy Streak is broken if `CombatAction.GetHit` occurs or when the bonus is reached
-   - This also breaks the Consecutive Streak 
+   - This also breaks the Consecutive Streak
+   
+### Advanced Steps
 5. Global Index For Non-Bonus Item Drops
    - Instead of returning Nothing most of the time, use `GlobalDropTable` to find an item to return
      - Any Bonus rewards take priority over this drop
@@ -20,7 +34,7 @@
          - E.g. For a first kill `CombatEvent` with `EnemyGroup` B, return a Bomb (index 0), not a Rupee (index 1)
 6. Global Drop Odds - When getting a drop from a Global, there is no guarantee an item is returned
    - Odds of a global drop vary by group:
-       - Group A: `&nbsp;80/256`
+       - Group A: `80/256`
        - Group B: `104/256`
        - Group C: `152/256`
        - Group D: `104/256`
@@ -56,9 +70,10 @@
       - If a number would exceed 255, it rolls back over to 0 instead
     - Consequence: Since Fairy Streak Bonus only resets on hit, it can wrap all the way back around to 16 to force another Fairy
 
-### How Counters Work in Zelda
+## The Legend of Zelda Counter Engine Details
+Below is a detailed description of how the counters work in Zelda on the NES. It can be used as a reference when attempting the Kata.
 
-#### The Global Counter
+### The Global Counter
 - Cycles from 0-9
 - Advances on kill of any Group A-D enemy
   - The result to return uses current count, before advancing 
@@ -86,7 +101,9 @@
 - Resets if you get hit
 - Otherwise gets to 255, then NES Limitations returns it to 0
 
-### Currently Out of Scope
+## Currently Out of Scope of the Kata
+Here are some details of the engine that are presently not part of the Kata, but could be potentially added in the future.
+
 - Differentiating "Spawning X Group Enemies" (which advance the global) from "regular X Group Enemies" (which do not)
 - Killing multiple enemies at once, and getting e.g. multiple fairies
 - Overkill (i.e. multiple kill counts within a single frame)

@@ -1,6 +1,8 @@
 ﻿# The Legend of Zelda Combat Kata
 Blah blah description here.
 
+A detailed description of the Zelda combat / counter engine is availble in [`engine-detail.md`](./engine-detail.md). It's not necessary to know every aspect of the engine to complete the Kata, but may provide insight or sate curiosity. A lot more detail is available about the engine (and all of Zelda in general) up on [RedCandle.us](http://redcandle.us/Legend_of_Zelda/Technical_Information#Forced_drops).
+
 # TODO
 
 1. Separate existing implementations into subfolders (copy any changed files to it as their own solutions)
@@ -69,37 +71,6 @@ Use the solution within the `Start` folder to get started. (TODO: Describe the f
     - All numbers within the `GameEngine` class cannot exceed 255
       - If a number would exceed 255, it rolls back over to 0 instead
     - Consequence: Since Fairy Streak Bonus only resets on hit, it can wrap all the way back around to 16 to force another Fairy
-
-## The Legend of Zelda Counter Engine Details
-Below is a detailed description of how the counters work in Zelda on the NES. It can be used as a reference when attempting the Kata.
-
-### The Global Counter
-- Cycles from 0-9
-- Advances on kill of any Group A-D enemy
-  - The result to return uses current count, before advancing 
-- Does not advance on kill of X enemy
-- Never resets
-
-### The Consecutive Counter
-- Increments once for most Group A-D, X enemies
-- 10th Kill drops a reward (Five Rupees, or Bomb if Killed with Bomb)
-  - Resets to 0 on reward drop
-- If enemy was X enemy, freeze count on 10
-  - Drops locked reward and resets to 0 on next Group A-D Kill
-- Resets if you Get Hit
-- Does not advance for Dodongo Bomb Bomb Kill
-- Advances to 10, then resolves as Bomb Streak Bonus for Dodongo Bomb Sword Kill
-
-### The Fairy Counter
-- Increments once for most A-D, X enemies
-- Does not advance for Dodongo
-- After an A-D kill, if this is count is at 16, a Fairy drops
-  - Consecutive Counter resets
-  - Fairy Counter does not reset
-  - This reward overrides any other drop, including consecutive rewards
-  - If 16 is skipped over (X enemy Kill, etc.), it is skipped forever
-- Resets if you get hit
-- Otherwise gets to 255, then NES Limitations returns it to 0
 
 ## Currently Out of Scope of the Kata
 Here are some details of the engine that are presently not part of the Kata, but could be potentially added in the future.

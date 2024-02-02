@@ -1,6 +1,8 @@
 # The Legend of Zelda Counter Engine Details
 Below is a detailed description of how the counters work in Zelda on the NES. It can be used as a reference when attempting the Kata.
 
+A lot more detail is available about the engine (and all of Zelda in general) up on [RedCandle.us](http://redcandle.us/Legend_of_Zelda/Technical_Information#Forced_drops).
+
 ## The Global Counter
 - Cycles from 0-9
 - Advances on kill of any Group A-D enemy

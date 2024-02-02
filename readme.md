@@ -4,7 +4,6 @@ Blah blah description here.
 A detailed description of the Zelda combat / counter engine is available in [engine-detail.md](./engine-detail.md). It's not necessary to know every aspect of the engine to complete the Kata, but may provide insight or sate curiosity.
 
 # TODO
-
 1. Separate existing implementations into subfolders (copy any changed files to it as their own solutions)
 2. Create "Starting Point" template (the root project? Own folder?)
 3. Separate first four steps of Kata from the rest (Step 5 onwards is 'advanced')

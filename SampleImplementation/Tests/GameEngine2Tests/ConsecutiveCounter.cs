@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace ZeldaKata.GameEngine2Tests;
+namespace ZeldaKata.Tests.GameEngine2Tests;
 
 public class ConsecutiveCounter
 {

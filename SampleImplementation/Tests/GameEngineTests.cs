@@ -2,9 +2,9 @@
 using FluentAssertions.Execution;
 using Xunit;
 
-namespace ZeldaKata;
+namespace ZeldaKata.Tests;
 
-public class Tests
+public class GameEngineTests
 {
   private readonly GameEngine _engine = new();
 

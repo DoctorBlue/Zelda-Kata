@@ -56,6 +56,7 @@ Additional **Combat Actions** may become available as you progress through the s
       - Group B: `104/256`
       - Group C: `152/256`
       - Group D: `104/256`
+      - Group X: `0%` (always drops Nothing)
    - Return Nothing on failure
 7. Consecutive Streak Bonus Delay - If the 10th enemy was killed and is in the "X" group:
    - Return Nothing

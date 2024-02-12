@@ -1,4 +1,4 @@
-﻿namespace ZeldaKata.GameEngine2Tests;
+﻿namespace ZeldaKata.Tests.GameEngine2Tests;
 
 public class FairyCounter
 {

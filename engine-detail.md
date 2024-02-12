@@ -3,7 +3,7 @@ Below is a detailed description of how the counters work in Zelda on the NES. It
 
 ## Resources
 - A lot more detail is available about the engine (and all of Zelda in general) up on [RedCandle.us Technical Information - Forced Drops](http://redcandle.us/Legend_of_Zelda/Technical_Information#Forced_drops).
-- A breakdown of a former world record speedrun that digs into many mechanics of the game (including counters) can be viewed on YouTube: [The Legend of Zelda World Record Speedrun Explained, by Bismuth](https://www.youtube.com/watch?v=ACuk2TXoNhc)
+- A breakdown of a former world record speedrun that digs into many mechanics of the game (including the drop system and its counters) can be viewed on YouTube: [The Legend of Zelda World Record Speedrun Explained, by Bismuth](https://www.youtube.com/watch?v=ACuk2TXoNhc). I highly recommend giving this a watch for many reasons, but the most relevant one is that the video provides a live, visual representation of the item counting system in action.
 
 ## The Global Counter
 - Cycles from 0-9

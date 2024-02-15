@@ -75,15 +75,15 @@ Additional **Combat Actions** may become available as you progress through the s
      - The Global Index is incremented
      - The Consecutive Streak, instead of incrementing is **set to 10**
      - The Fairy Consecutive Streak is **not incremented**
-     - A Bomb should be returned, as the Consecutive Streak is at 10, and Dodongo is full of Bombs to drop
      - A Bomb is **not returned** if the Fairy Counter is at 16. A Fairy is returned instead
+     - A Bomb should be returned, as the Consecutive Streak is at 10, and Dodongo is full of Bombs to drop
 10. New Combat Event: "Kill Dodongo with Bombs"
     - The other way to kill a Dodongo is to use multiple Bombs on it. When killed in this fashion, the following rules are applied:
     - The Global Index is incremented
     - The Consecutive Streak is **not incremented**
     - The Fairy Consecutive Streak is **not incremented**
-      - If the Fairy Consecutive Streak previously reached 16, it **remains at 16, rewarding a fairy again**
-      - If multiple "Kill Dodongo with Bombs" actions occur, 
+      - If the fairy counter previously reached 16, it **remains at 16, rewarding a fairy again**
+      - If multiple "Kill Dodongo with Bombs" actions occur, each one will drop a fairy due to the fairy counter remaining at 16.
 11. Combined Combat Action: "Kill and Get Hit"
     - It is possible for two Actions to occur at the exact same time
     - The Enemy dies, but before any Drop is given, the player gets hit
